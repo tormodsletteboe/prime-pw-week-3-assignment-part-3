@@ -71,7 +71,16 @@ console.log(partsAvailable);
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
 //    There are 572 parts in total, and each box holds 7 parts.
-//    Use a `while` loop to keep adding parts to boxes until
+//    Use a `while` loop to keep ladding parts to boxes until
 //    no more boxes can be filled.
-//    Then log how many boxes were filled, and how many parts are left over.
+//    Then log how many boxes were filed, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let numberOfParts = 572;
+const maxPartsInEachBox =7;
+let arrayOfBoxes = [];
+while(numberOfParts>=7){
+    arrayOfBoxes.push(maxPartsInEachBox);
+    numberOfParts-=maxPartsInEachBox;
+}
+console.log('Number of boxes filled: '+arrayOfBoxes.length+'\n'+'Number of parts left: '+numberOfParts);
+
